@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Torrently</string>
+
+    <string name="notification_channel_name">Transfers</string>
+    <string name="notification_channel_description">Ongoing download and upload activity</string>
+    <string name="notification_title">%1$d active transfer(s)</string>
+    <string name="notification_title_idle">Torrently</string>
+    <string name="notification_text">%1$s down · %2$s up · %3$s active</string>
+    <string name="notification_text_progress">%1$s down · %2$s up · %3$d%% complete</string>
+    <string name="notification_text_idle">No active transfers</string>
+    <string name="action_pause_all">Pause all</string>
+    <string name="action_resume_all">Resume all</string>
+    <string name="action_stop_all">Stop</string>
+
+    <string name="error_no_activity">This action needs an open app window</string>
+    <string name="error_pick_failed">Could not open the file picker</string>
+    <string name="error_invalid_input">Invalid input</string>
+</resources>

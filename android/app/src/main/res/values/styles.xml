@@ -1,0 +1,57 @@
+<resources>
+
+    <color name="torrently_background">#09090F</color>
+    <color name="torrently_surface">#12121B</color>
+    <color name="torrently_elevated">#191925</color>
+    <color name="torrently_primary">#F43F5E</color>
+    <color name="torrently_text">#F5F5F7</color>
+    <color name="torrently_text_secondary">#A1A1B2</color>
+    <color name="torrently_border">#30303F</color>
+
+    <!-- Permanent dark base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+        <item name="android:windowBackground">@color/torrently_background</item>
+        <item name="android:statusBarColor">@color/torrently_background</item>
+        <item name="android:navigationBarColor">@color/torrently_surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:colorAccent">@color/torrently_primary</item>
+        <item name="android:textColorPrimary">@color/torrently_text</item>
+        <item name="android:textColorSecondary">@color/torrently_text_secondary</item>
+        <item name="android:textColorHint">@color/torrently_text_secondary</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:alertDialogTheme">@style/TorrentlyAlertDialog</item>
+        <item name="android:dialogTheme">@style/TorrentlyDialog</item>
+    </style>
+
+    <!-- Dark launch/splash theme so the very first frame is never white. -->
+    <style name="LaunchTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:statusBarColor">@color/torrently_background</item>
+        <item name="android:navigationBarColor">@color/torrently_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="TorrentlyAlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@color/torrently_surface</item>
+        <item name="android:background">@color/torrently_surface</item>
+        <item name="android:textColorPrimary">@color/torrently_text</item>
+        <item name="android:textColor">@color/torrently_text</item>
+        <item name="colorAccent">@color/torrently_primary</item>
+        <item name="android:colorAccent">@color/torrently_primary</item>
+        <item name="android:backgroundDimAmount">0.85</item>
+    </style>
+
+    <style name="TorrentlyDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/torrently_surface</item>
+        <item name="android:textColorPrimary">@color/torrently_text</item>
+        <item name="android:textColor">@color/torrently_text</item>
+        <item name="colorAccent">@color/torrently_primary</item>
+        <item name="android:colorAccent">@color/torrently_primary</item>
+        <item name="android:backgroundDimAmount">0.85</item>
+    </style>
+
+</resources>
